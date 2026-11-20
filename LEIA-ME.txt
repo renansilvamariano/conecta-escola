@@ -1,0 +1,153 @@
+SISTEMA DE GESTÃO E AGENDAMENTO DE RECURSOS TECNOLÓGICOS ESCOLARES
+VERSÃO 2.1 — IDENTIDADE DO APLICATIVO
+
+COMO ATUALIZAR
+1. Faça uma cópia de segurança da pasta atual do projeto.
+2. Extraia este ZIP.
+3. Copie os arquivos extraídos para a pasta atual do projeto, substituindo os anteriores.
+4. Abra o index.html com o Live Server e atualize o navegador com Ctrl+F5.
+
+NOVIDADES DA VERSÃO 1.3
+- Removido o botão manual “Concluir”.
+- O sistema altera automaticamente o status conforme o horário reservado:
+  • Agendado: antes do início da aula.
+  • Em utilização: durante o horário reservado.
+  • Concluído: assim que o horário termina.
+- O status é recalculado ao abrir/atualizar o sistema e enquanto a página está aberta.
+- O botão “Cancelar” continua disponível para reservas agendadas ou em utilização.
+- O histórico mantém o nome do responsável, equipamento, quantidade, data e horário.
+- O encerramento automático não comprova a devolução física dos equipamentos; ele encerra somente a reserva no sistema.
+
+REGRAS MANTIDAS
+- Estoque coletivo: 40 Chromebooks e 30 tablets.
+- Reservas independentes por tipo de equipamento, data e aula.
+- Mais de um professor pode reservar o mesmo horário, respeitando o estoque disponível.
+- A grade fixa do matutino continua limitando reservas aos espaços livres configurados.
+
+IMPORTANTE
+Os dados continuam salvos no localStorage deste navegador. Para uso simultâneo por vários usuários e atualização compartilhada em tempo real, será necessário integrar banco de dados e autenticação.
+
+
+NOVIDADE DA VERSÃO 1.4
+- Atualização exclusivamente das cores da interface para a paleta do logotipo oficial do colégio: azul-marinho e azul-claro.
+- Layout, textos, botões, funcionalidades, regras de reserva e armazenamento foram preservados.
+
+
+NOVIDADE DA VERSÃO 1.5
+- Nome oficial “Colégio Estadual Professora Benedita Rosa Rezende” incluído em destaque no painel da Visão geral.
+- O nome aparece somente na Visão geral.
+- Demais textos, botões, telas, cores, funcionalidades e regras foram preservados.
+
+
+NOVIDADE DA VERSÃO 1.6
+- Nome do colégio reposicionado para o topo da Visão geral, centralizado acima de “PAINEL DE CONTROLE”.
+- Fonte do nome ajustada para o mesmo tamanho do título “Visão geral”.
+- Removida a identificação que ficava dentro do quadro “Gestão de recursos”.
+- Nenhuma outra escrita, botão, tela, cor ou funcionalidade foi alterada.
+
+
+NOVIDADE DA VERSÃO 1.7
+- O nome oficial do colégio também aparece no topo das telas Equipamentos e Agendamentos.
+- Foi aplicado o mesmo posicionamento, alinhamento centralizado e tamanho de fonte da tela Visão geral.
+- A tela Visão geral permanece como estava.
+- Nenhuma outra escrita, botão, cor, tela ou funcionalidade foi alterada.
+
+
+NOVIDADES DA VERSÃO 1.8
+- O botão “Cadastrar equipamento” solicita a senha do responsável antes de abrir o formulário.
+- Cada equipamento cadastrado individualmente possui a opção “Excluir equipamento”, também protegida pela senha.
+- Senha definida pelo responsável: 915668.
+- A exclusão ainda solicita confirmação antes de apagar o registro.
+- O cadastro e a exclusão mantêm as demais regras e dados do sistema.
+
+OBSERVAÇÃO DE SEGURANÇA
+Esta é uma proteção simples para o protótipo local. Como o aplicativo ainda funciona somente no navegador, a senha fica no código JavaScript e pode ser descoberta por alguém com conhecimentos técnicos. Para proteção real em uso institucional, a validação deverá ser feita em servidor, com autenticação e permissões.
+
+
+NOVIDADE DA VERSÃO 1.9
+- Removida da tela Equipamentos a seção “Equipamentos cadastrados individualmente” e a exibição dos respectivos cartões.
+- Permanecem visíveis somente os estoques compartilhados de Chromebooks e Tablets.
+- A estrutura de cadastro individual foi mantida no código para retomada futura, mas não aparece na interface nesta versão.
+- Nenhuma outra tela, texto, botão ou funcionalidade foi alterada.
+
+
+NOVIDADE DA VERSÃO 2.0
+- O quadrado com as letras “RE” na identificação lateral foi substituído pelo logotipo oficial do Colégio Estadual Professora Benedita Rosa Rezende.
+- O nome “Recursos Escolares” e o texto “GESTÃO E AGENDAMENTO” foram mantidos.
+- O arquivo do logotipo acompanha o projeto como logo_escola.jpeg.
+- Nenhuma outra tela, texto, botão, cor ou funcionalidade foi alterada.
+
+
+NOVIDADE DA VERSÃO 2.1
+- Nome do aplicativo atualizado para “Conecta Escola”.
+- Removido o subtítulo “GESTÃO E AGENDAMENTO” da identificação lateral.
+- Logotipo oficial do colégio mantido.
+- Nenhuma outra tela, texto, botão, cor ou funcionalidade foi alterada.
+
+
+NOVIDADES DA VERSÃO 2.2
+- Formulário de cadastro simplificado: removido o campo “Nome do equipamento”.
+- Mantidos somente Categoria, Identificação / patrimônio e Descrição opcional.
+- Categoria permite exclusivamente Chromebook e Tablet.
+- Removido o campo “Status” do formulário.
+- Ao cadastrar um Chromebook, o estoque compartilhado de Chromebooks aumenta em 1.
+- Ao cadastrar um Tablet, o estoque compartilhado de Tablets aumenta em 1.
+- A identificação/patrimônio é obrigatória.
+- O total do painel geral acompanha o estoque atualizado.
+- Os demais textos, telas, botões e regras foram preservados.
+
+IMPORTANTE SOBRE A CONTAGEM
+O estoque inicial continua sendo 40 Chromebooks e 30 Tablets. Cada novo cadastro individual acrescenta uma unidade ao tipo correspondente. Portanto, cadastros de teste também aumentam o estoque; use a identificação real do patrimônio ao cadastrar.
+
+
+NOVIDADES DA VERSÃO 2.3
+- Removido o botão “Cadastrar equipamento” da tela principal Equipamentos.
+- Os cartões Chromebooks e Tablets agora são clicáveis e abrem suas respectivas listas patrimoniais.
+- Dentro de cada categoria há um botão “Cadastrar equipamento” no topo.
+- O formulário recebe automaticamente a categoria selecionada.
+- A lista exibe identificação/patrimônio, categoria e descrição, com botão “Excluir” em cada item.
+- Cadastro e exclusão continuam protegidos pela senha do responsável.
+- Ao cadastrar, o estoque da categoria aumenta em uma unidade.
+- Ao excluir, o estoque da categoria diminui em uma unidade.
+- Os demais fluxos, telas, agendamentos e identidade visual foram preservados.
+
+
+NOVIDADES DA VERSÃO 2.4
+- Ao abrir Chromebooks, a lista passa a exibir uma linha/cartão para cada unidade do estoque.
+- Identificações provisórias de Chromebook seguem CH-001, CH-002, CH-003...
+- Ao abrir Tablets, a lista exibe todas as unidades, com identificações provisórias TB-001, TB-002, TB-003...
+- Registros patrimoniais que já estavam cadastrados são preservados; os códigos provisórios são gerados sem duplicar os códigos existentes.
+- Cada unidade, inclusive as identificações provisórias, possui botão Excluir protegido por senha e confirmação.
+- Excluir uma unidade reduz o estoque daquela categoria em uma unidade.
+- O sistema cria os registros provisórios faltantes uma única vez na migração; não repõe automaticamente unidades excluídas.
+- Os registros antigos de resumo (“40 unidades” e “30 unidades”) são removidos da lista individual, pois não representam patrimônio individual.
+
+
+NOVIDADES DA VERSÃO 2.5
+- Removida a mensagem técnica que dizia que a data não correspondia a determinado dia da semana.
+- Quando a data selecionada não corresponde ao dia disponível do horário escolhido, o sistema apresenta um aviso central em formato de pop-up: “Data/horário indisponível”.
+- O usuário fecha o aviso pelo botão “Entendi” ou pela tecla Esc.
+- Os demais erros de agendamento continuam usando as mensagens já existentes.
+- Nenhuma outra regra, tela ou funcionalidade foi alterada.
+
+
+NOVIDADES DA VERSÃO 2.6
+- Removido o botão geral “Novo agendamento” da Visão geral.
+- O agendamento é iniciado exclusivamente ao clicar em um horário livre na grade de disponibilidade.
+- Removidos do formulário os campos visíveis de Data e Horário.
+- A data é definida automaticamente para a próxima ocorrência do dia da semana da aula clicada; o horário é definido pelo próprio bloco selecionado na grade.
+- Removido o pop-up/mensagem “Data/horário indisponível” e a validação redundante correspondente.
+- Mantidos tipo de equipamento, quantidade, responsável, turma/grupo e finalidade/aula.
+- A disponibilidade e os limites de estoque continuam sendo verificados no momento da confirmação.
+
+
+AJUSTE COMPLEMENTAR DA VERSÃO 2.6
+- Removido também o botão “Novo agendamento” da tela Agendamentos.
+- O único caminho para iniciar uma reserva é clicar em um horário livre da grade.
+
+
+NOVIDADES DA VERSÃO 2.7
+- Na grade de Agendamentos, os blocos fixos agora exibem o nome do professor responsável, conforme o PDF “Padlet BRR - 2026 - EDUCADORES”.
+- Os quatro horários livres permanecem clicáveis para iniciar o agendamento.
+- Os botões dos horários livres receberam uma tonalidade verde pastel muito clara, mantendo contraste e legibilidade.
+- Nenhuma regra de reserva, texto de outras telas ou funcionalidade foi alterada.
